@@ -1,0 +1,16 @@
+which rpm
+which dpkg
+
+sudo apt update
+sudo apt install alien -y
+sudo alien [package_name].rpm
+sudo dpkg -i [package_name].deb
+sudo alien -i [package_name].rpm
+
+yum search string
+yum info [package]
+yum install [package]
+yum remove [package]
+rpm -qa
+rpm -ivh package.rpm
+rpm -e [package]
