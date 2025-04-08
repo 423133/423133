@@ -1,0 +1,29 @@
+#lab 3
+#1
+nano oddoreven.sh
+./oddoreven.sh
+#code
+echo "enter a number"
+read number
+if (( $number % 2 == 0 ));then
+    echo "entered no is even"
+else
+  echo "enterd no is odd"
+fi
+
+#2
+nano factorial.sh
+chmod +x factorial.sh
+./factorial.sh
+#code
+echo "enter the number"
+read number
+for (( i = $number -1;i>0;i--));do
+  num =$ ((num*i))
+done
+echo "factorial of the entered no is $num"
+
+#lab5
+awk '$2=="ERROR" {print $1,$4}' logfile.txt
+awk '{print $1}' server.log | sort | uniq -c
+sed -E 's/^[^@
