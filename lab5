@@ -1,0 +1,5 @@
+awk '$2=="ERROR" {print $1,$4}' logfile.txt
+awk '{print $1}' server.log | sort | uniq -c
+sed -E 's/^[^@]' logfile.txt
+sort -f -u file.txt
+sed -E 's/[0-9]{6}/******/g' pno.txt
