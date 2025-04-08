@@ -1,0 +1,6 @@
+grep - i "erro"r logfile.txt
+grep -ic "succes"s data.txt
+grep -i "[0-9]*" records.txt
+grep -ir "tod"o *.txt dir
+grep -i "apple" fruits.txt
+#lab 3
